@@ -21,9 +21,9 @@ setAPIKeyメソッドでAPIキーを登録する。
 Slack::setAPIKey("your API key");
 ```
 
-sendSlackメソッドで投稿する。
+sendメソッドで投稿する。
 ``` cpp
-Slack::sendSlack("投稿したい文章", "投稿したいチャンネル名");
+Slack::send("投稿したい文章", "投稿したいチャンネル名");
 ```
 
 チャンネル名は省略可能。省略した場合はgeneralチャンネルとなる。
