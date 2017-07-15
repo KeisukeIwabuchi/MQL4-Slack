@@ -1,6 +1,6 @@
 # MQL4-Slack
-MT4からSlackに投稿するためのモジュール  
-![slack投稿サンプル](https://user-images.githubusercontent.com/14832366/27253107-0b5e2446-53a9-11e7-8c5d-5f5bf1136e20.png)
+Module for posting from MT4 to Slack  
+![slack sample](https://user-images.githubusercontent.com/14832366/27253107-0b5e2446-53a9-11e7-8c5d-5f5bf1136e20.png)
 
 
 ## Requirement
@@ -9,21 +9,21 @@ MT4からSlackに投稿するためのモジュール
 
 
 ## Install
-1. Slack.mqhをダウンロード
-2. データフォルダを開き、/MQL4/Includes/mql4_modules/Slack/Slack.mqhとして保存
+1. Download Slack.mqh
+2. Save the file to /MQL4/Includes/mql4_modules/Slack/Slack.mqh
 
 
 ## Usage
-事前にSlack APIキーを用意しておく。  
-Slack.mqhをincludeで読み込む。  
-setAPIKeyメソッドでAPIキーを登録する。
+Prepare the Slack API key in advance.  
+Include Slack.mqh.  
+Register API key with setAPIKey method.
 ``` cpp
 Slack::setAPIKey("your API key");
 ```
 
-sendメソッドで投稿する。
+Post with the send method.
 ``` cpp
-Slack::send("投稿したい文章", "投稿したいチャンネル名");
+Slack::send("text", "channel name");
 ```
 
-チャンネル名は省略可能。省略した場合はgeneralチャンネルとなる。
+The channel name can be omitted. If omitted, it becomes general channel.
