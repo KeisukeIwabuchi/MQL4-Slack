@@ -10,7 +10,7 @@ Module for posting from MT4 to Slack
 
 ## Install
 1. Download Slack.mqh
-2. Save the file to /MQL4/Includes/mql4_modules/Slack/Slack.mqh
+2. Save the file to /MQL4/Include/mql4_modules/Slack/Slack.mqh
 
 
 ## Usage
